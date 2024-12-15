@@ -1,15 +1,49 @@
 import SwiftUI
 
 struct WeatherData: Codable {
+    struct WeatherD: Codable,Identifiable {
+        let id = UUID()
+        let main: Main
+        let weather: [Weather]
+        let pop: Double
+        let wind:Wind
+    }
+
     struct Main: Codable {
-        let temp: Double
+        let feels_like:Double
+        let humidity:Double
     }
     struct Weather: Codable {
-        let description: String
+        let main:String
+        @ViewBuilder var main_result : some View {
+            switch self.main {
+            case "Clear" :
+                Image(systemName: "sun.max")
+                    .foregroundStyle(.red)
+            case "Clouds":
+                Image(systemName: "cloud")
+                    .foregroundStyle(.primary)
+            case "Rain":
+                Image(systemName: "cloud.rain")
+                    .foregroundStyle(.blue)
+            case "Snow":
+                Image(systemName: "snowflake")
+                    .foregroundStyle(.cyan)
+            default:
+                Image(systemName: "questionmark.circle")
+            }
+        }
+
     }
-    let weather: [Weather]
-    let main: Main
-    let name: String
+    struct Wind : Codable {
+        let speed:Double
+    }
+    let list:[WeatherD]
+
+    struct City:Codable{
+        let name:String
+    }
+    let city:City
 }
 
 struct ContentView: View {
@@ -20,10 +54,12 @@ struct ContentView: View {
         ScrollView(.horizontal) {
             VStack(alignment:.center) {
                 if let weather = weather {
-                    VStack{
-                        Text("\(weather.name)")
-                        Text("気温:　\(String(format: "%.1f", weather.main.temp - 273.15))")
-                            .font(.title3)
+                    HStack{
+                        ForEach(weather.list) { weather in
+                            VStack(alignment:.center) {
+                                weather.weather.first?.main_result
+                            }
+                        }
                     }
 
                 } else if let errorMessage = errorMessage {
@@ -33,24 +69,23 @@ struct ContentView: View {
                     Text("Loading...")
                 }
             }
+            .padding()
             .onAppear{
                 fetchWeather()
             }
         }
-        .padding(.vertical, 40)
+        .padding(.vertical, 20)
         .border(.black, width: 1)
     }
 
     func fetchWeather() {
-        let baseURL = "https://api.openweathermap.org/data/2.5/weather"
+        let baseURL = "https://api.openweathermap.org/data/2.5/forecast"
         let apiKey = "f3406913417c0da6f9176a4b89c1c2be"
-        let latitude = 35.473530770162306
-        let longitude = 139.58599202401908
+        let city = "Yokohama"
 
         var components = URLComponents(string: baseURL)!
         components.queryItems = [
-            URLQueryItem(name: "lat", value: "\(latitude)"),
-            URLQueryItem(name: "lon", value: "\(longitude)"),
+            URLQueryItem(name: "q", value: city),
             URLQueryItem(name: "appid", value: apiKey)
         ]
 
