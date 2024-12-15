@@ -1,5 +1,11 @@
 import SwiftUI
 
+/// ## Propaty
+/// - id = UUID()
+/// - main: Main
+/// - weather: [Weather]
+/// - pop: Double
+/// - wind:Wind
 struct WeatherData: Codable {
     struct WeatherD: Codable,Identifiable {
         let id = UUID()
@@ -46,6 +52,7 @@ struct WeatherData: Codable {
     let city:City
 }
 
+// MARK: -Content
 struct ContentView: View {
     @State private var weather: WeatherData?
     @State private var errorMessage: String?
