@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		EC824AB12D0F6C3F00F15893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC824A982D0F6C3E00F15893 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC824A9F2D0F6C3E00F15893;
+			remoteInfo = WeatherAPIYokohama;
+		};
+		EC824ABB2D0F6C3F00F15893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC824A982D0F6C3E00F15893 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC824A9F2D0F6C3E00F15893;
+			remoteInfo = WeatherAPIYokohama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC824AA02D0F6C3E00F15893 /* WeatherAPIYokohama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAPIYokohama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC824AB02D0F6C3F00F15893 /* WeatherAPIYokohamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAPIYokohamaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC824ABA2D0F6C3F00F15893 /* WeatherAPIYokohamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAPIYokohamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EC824AA22D0F6C3E00F15893 /* WeatherAPIYokohama */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WeatherAPIYokohama;
+			sourceTree = "<group>";
+		};
+		EC824AB32D0F6C3F00F15893 /* WeatherAPIYokohamaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WeatherAPIYokohamaTests;
+			sourceTree = "<group>";
+		};
+		EC824ABD2D0F6C3F00F15893 /* WeatherAPIYokohamaUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WeatherAPIYokohamaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC824A9D2D0F6C3E00F15893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC824AAD2D0F6C3F00F15893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC824AB72D0F6C3F00F15893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC824A972D0F6C3E00F15893 = {
+			isa = PBXGroup;
+			children = (
+				EC824AA22D0F6C3E00F15893 /* WeatherAPIYokohama */,
+				EC824AB32D0F6C3F00F15893 /* WeatherAPIYokohamaTests */,
+				EC824ABD2D0F6C3F00F15893 /* WeatherAPIYokohamaUITests */,
+				EC824AA12D0F6C3E00F15893 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC824AA12D0F6C3E00F15893 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC824AA02D0F6C3E00F15893 /* WeatherAPIYokohama.app */,
+				EC824AB02D0F6C3F00F15893 /* WeatherAPIYokohamaTests.xctest */,
+				EC824ABA2D0F6C3F00F15893 /* WeatherAPIYokohamaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC824A9F2D0F6C3E00F15893 /* WeatherAPIYokohama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC824AC42D0F6C3F00F15893 /* Build configuration list for PBXNativeTarget "WeatherAPIYokohama" */;
+			buildPhases = (
+				EC824A9C2D0F6C3E00F15893 /* Sources */,
+				EC824A9D2D0F6C3E00F15893 /* Frameworks */,
+				EC824A9E2D0F6C3E00F15893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EC824AA22D0F6C3E00F15893 /* WeatherAPIYokohama */,
+			);
+			name = WeatherAPIYokohama;
+			packageProductDependencies = (
+			);
+			productName = WeatherAPIYokohama;
+			productReference = EC824AA02D0F6C3E00F15893 /* WeatherAPIYokohama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC824AAF2D0F6C3F00F15893 /* WeatherAPIYokohamaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC824AC72D0F6C3F00F15893 /* Build configuration list for PBXNativeTarget "WeatherAPIYokohamaTests" */;
+			buildPhases = (
+				EC824AAC2D0F6C3F00F15893 /* Sources */,
+				EC824AAD2D0F6C3F00F15893 /* Frameworks */,
+				EC824AAE2D0F6C3F00F15893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC824AB22D0F6C3F00F15893 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EC824AB32D0F6C3F00F15893 /* WeatherAPIYokohamaTests */,
+			);
+			name = WeatherAPIYokohamaTests;
+			packageProductDependencies = (
+			);
+			productName = WeatherAPIYokohamaTests;
+			productReference = EC824AB02D0F6C3F00F15893 /* WeatherAPIYokohamaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC824AB92D0F6C3F00F15893 /* WeatherAPIYokohamaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC824ACA2D0F6C3F00F15893 /* Build configuration list for PBXNativeTarget "WeatherAPIYokohamaUITests" */;
+			buildPhases = (
+				EC824AB62D0F6C3F00F15893 /* Sources */,
+				EC824AB72D0F6C3F00F15893 /* Frameworks */,
+				EC824AB82D0F6C3F00F15893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC824ABC2D0F6C3F00F15893 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EC824ABD2D0F6C3F00F15893 /* WeatherAPIYokohamaUITests */,
+			);
+			name = WeatherAPIYokohamaUITests;
+			packageProductDependencies = (
+			);
+			productName = WeatherAPIYokohamaUITests;
+			productReference = EC824ABA2D0F6C3F00F15893 /* WeatherAPIYokohamaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC824A982D0F6C3E00F15893 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					EC824A9F2D0F6C3E00F15893 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					EC824AAF2D0F6C3F00F15893 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = EC824A9F2D0F6C3E00F15893;
+					};
+					EC824AB92D0F6C3F00F15893 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = EC824A9F2D0F6C3E00F15893;
+					};
+				};
+			};
+			buildConfigurationList = EC824A9B2D0F6C3E00F15893 /* Build configuration list for PBXProject "WeatherAPIYokohama" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC824A972D0F6C3E00F15893;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EC824AA12D0F6C3E00F15893 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC824A9F2D0F6C3E00F15893 /* WeatherAPIYokohama */,
+				EC824AAF2D0F6C3F00F15893 /* WeatherAPIYokohamaTests */,
+				EC824AB92D0F6C3F00F15893 /* WeatherAPIYokohamaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC824A9E2D0F6C3E00F15893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC824AAE2D0F6C3F00F15893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC824AB82D0F6C3F00F15893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC824A9C2D0F6C3E00F15893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC824AAC2D0F6C3F00F15893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC824AB62D0F6C3F00F15893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC824AB22D0F6C3F00F15893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC824A9F2D0F6C3E00F15893 /* WeatherAPIYokohama */;
+			targetProxy = EC824AB12D0F6C3F00F15893 /* PBXContainerItemProxy */;
+		};
+		EC824ABC2D0F6C3F00F15893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC824A9F2D0F6C3E00F15893 /* WeatherAPIYokohama */;
+			targetProxy = EC824ABB2D0F6C3F00F15893 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EC824AC22D0F6C3F00F15893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC824AC32D0F6C3F00F15893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC824AC52D0F6C3F00F15893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WeatherAPIYokohama/Preview Content\"";
+				DEVELOPMENT_TEAM = K6CP3MSN8S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.hk.kazuki.hayashi.WeatherAPIYokohama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC824AC62D0F6C3F00F15893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WeatherAPIYokohama/Preview Content\"";
+				DEVELOPMENT_TEAM = K6CP3MSN8S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.hk.kazuki.hayashi.WeatherAPIYokohama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC824AC82D0F6C3F00F15893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6CP3MSN8S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.hk.kazuki.hayashi.WeatherAPIYokohamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherAPIYokohama.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherAPIYokohama";
+			};
+			name = Debug;
+		};
+		EC824AC92D0F6C3F00F15893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6CP3MSN8S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.hk.kazuki.hayashi.WeatherAPIYokohamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherAPIYokohama.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherAPIYokohama";
+			};
+			name = Release;
+		};
+		EC824ACB2D0F6C3F00F15893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6CP3MSN8S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.hk.kazuki.hayashi.WeatherAPIYokohamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeatherAPIYokohama;
+			};
+			name = Debug;
+		};
+		EC824ACC2D0F6C3F00F15893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6CP3MSN8S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.hk.kazuki.hayashi.WeatherAPIYokohamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeatherAPIYokohama;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC824A9B2D0F6C3E00F15893 /* Build configuration list for PBXProject "WeatherAPIYokohama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC824AC22D0F6C3F00F15893 /* Debug */,
+				EC824AC32D0F6C3F00F15893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC824AC42D0F6C3F00F15893 /* Build configuration list for PBXNativeTarget "WeatherAPIYokohama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC824AC52D0F6C3F00F15893 /* Debug */,
+				EC824AC62D0F6C3F00F15893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC824AC72D0F6C3F00F15893 /* Build configuration list for PBXNativeTarget "WeatherAPIYokohamaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC824AC82D0F6C3F00F15893 /* Debug */,
+				EC824AC92D0F6C3F00F15893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC824ACA2D0F6C3F00F15893 /* Build configuration list for PBXNativeTarget "WeatherAPIYokohamaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC824ACB2D0F6C3F00F15893 /* Debug */,
+				EC824ACC2D0F6C3F00F15893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC824A982D0F6C3E00F15893 /* Project object */;
+}
