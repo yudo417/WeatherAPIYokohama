@@ -21,6 +21,7 @@ struct WeatherData: Codable {
         let weather: [Weather]
         let pop: Double
         let wind:Wind
+        let dt_txt:String
     }
 
     struct Main: Codable {

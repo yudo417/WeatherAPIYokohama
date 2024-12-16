@@ -4,22 +4,26 @@ import SwiftUI
 
 // MARK: -Content
 struct ContentView: View {
-    @State private var weather: WeatherData?
-    @State private var errorMessage: String?
+    @ObservedObject var wvm = WeatherViewModel()
+
 
     var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal,showsIndicators: false) {
             VStack(alignment:.center) {
-                if let weather = weather {
+                if let weather = wvm.weather {
                     HStack{
                         ForEach(weather.list) { weather in
-                            VStack(alignment:.center) {
+                            VStack(alignment:.center,spacing:10) {
+                                Text("\(CalTime(weather.dt_txt))")
                                 weather.weather.first?.main_result
+                                Text("\(CaltempC(weather.main.feels_like))")
+
                             }
+                            .padding()
                         }
                     }
 
-                } else if let errorMessage = errorMessage {
+                } else if let errorMessage = wvm.errorMessage {
                     Text("Error: \(errorMessage)")
                         .foregroundColor(.red)
                 } else {
@@ -28,7 +32,7 @@ struct ContentView: View {
             }
             .padding()
             .onAppear{
-                fetchWeather()
+                wvm.fetchWeather()
             }
         }
         .padding(.vertical, 20)
@@ -44,48 +48,15 @@ struct ContentView: View {
 
 
 extension ContentView{
-    func fetchWeather() {
-        let baseURL = "https://api.openweathermap.org/data/2.5/forecast"
-        let apiKey = "f3406913417c0da6f9176a4b89c1c2be"
-        let city = "Yokohama"
+    func CaltempC(_ temp:Double) -> String{
+        String(format:"%.1f",temp - 273.15)
+    }
 
-        var components = URLComponents(string: baseURL)!
-        components.queryItems = [
-            URLQueryItem(name: "q", value: city),
-            URLQueryItem(name: "appid", value: apiKey)
-        ]
-
-        guard let url = components.url else {
-            self.errorMessage = "無効なURL"
-            return
-        }
-
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error {
-                DispatchQueue.main.async {
-                    self.errorMessage = "通信エラー: \(error.localizedDescription)"
-                }
-                return
-            }
-
-            guard let data = data else {
-                DispatchQueue.main.async {
-                    self.errorMessage = "データがありません"
-                }
-                return
-            }
-
-            do {
-                let decodedData = try JSONDecoder().decode(WeatherData.self, from: data)
-                DispatchQueue.main.async {
-                    self.weather = decodedData
-                }
-            } catch {
-                DispatchQueue.main.async {
-                    self.errorMessage = "デコードエラー: \(error.localizedDescription)"
-                }
-            }
-        }
-        .resume()
+    func CalTime(_ time:String) -> String{
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let dataString = df.date(from: time)!
+        df.dateFormat = "HH:mm"
+        return df.string(from: dataString)
     }
 }
