@@ -33,13 +33,13 @@ struct WeatherData: Codable {
         @ViewBuilder var main_result : some View {
             switch self.main {
             case "Clear" :
-                Image(systemName: "sun.max")
+                Image(systemName: "sun.max.fill")
                     .foregroundStyle(.red)
             case "Clouds":
                 Image(systemName: "cloud")
                     .foregroundStyle(.primary)
             case "Rain":
-                Image(systemName: "cloud.rain")
+                Image(systemName: "umbrella.fill")
                     .foregroundStyle(.blue)
             case "Snow":
                 Image(systemName: "snowflake")

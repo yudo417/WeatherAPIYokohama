@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EC824B4C2D11411800F15893 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = EC824B4B2D11411800F15893 /* Algorithms */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EC824AB12D0F6C3F00F15893 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		EC824ABA2D0F6C3F00F15893 /* WeatherAPIYokohamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAPIYokohamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EC824B4E2D11C91E00F15893 /* Exceptions for "WeatherAPIYokohama" folder in "WeatherAPIYokohama" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EC824A9F2D0F6C3E00F15893 /* WeatherAPIYokohama */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EC824AA22D0F6C3E00F15893 /* WeatherAPIYokohama */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EC824B4E2D11C91E00F15893 /* Exceptions for "WeatherAPIYokohama" folder in "WeatherAPIYokohama" target */,
+			);
 			path = WeatherAPIYokohama;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC824B4C2D11411800F15893 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				EC824AA22D0F6C3E00F15893 /* WeatherAPIYokohama */,
 				EC824AB32D0F6C3F00F15893 /* WeatherAPIYokohamaTests */,
 				EC824ABD2D0F6C3F00F15893 /* WeatherAPIYokohamaUITests */,
+				EC824B482D11408200F15893 /* Frameworks */,
 				EC824AA12D0F6C3E00F15893 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,13 @@
 				EC824ABA2D0F6C3F00F15893 /* WeatherAPIYokohamaUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EC824B482D11408200F15893 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +138,7 @@
 			);
 			name = WeatherAPIYokohama;
 			packageProductDependencies = (
+				EC824B4B2D11411800F15893 /* Algorithms */,
 			);
 			productName = WeatherAPIYokohama;
 			productReference = EC824AA02D0F6C3E00F15893 /* WeatherAPIYokohama.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = EC824A972D0F6C3E00F15893;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EC824B472D11403200F15893 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EC824AA12D0F6C3E00F15893 /* Products */;
 			projectDirPath = "";
@@ -399,6 +429,7 @@
 				DEVELOPMENT_TEAM = K6CP3MSN8S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherAPIYokohama/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +459,7 @@
 				DEVELOPMENT_TEAM = K6CP3MSN8S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherAPIYokohama/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC824B472D11403200F15893 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC824B4B2D11411800F15893 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC824B472D11403200F15893 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC824A982D0F6C3E00F15893 /* Project object */;
 }
