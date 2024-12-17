@@ -99,7 +99,7 @@ extension ContentView{
 
                         }
                         .fontWeight(.bold)
-                        .padding()
+                        .padding(.horizontal,3)
                         .opacity(isAfter(weather.dt_txt) ? 1 : 0.3)
                     }
                 }

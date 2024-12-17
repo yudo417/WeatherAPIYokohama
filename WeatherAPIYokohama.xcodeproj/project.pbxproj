@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC824B4C2D11411800F15893 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = EC824B4B2D11411800F15893 /* Algorithms */; };
+		ECCF481C2D11D30700535349 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = ECCF481B2D11D30700535349 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		EC824B4E2D11C91E00F15893 /* Exceptions for "WeatherAPIYokohama" folder in "WeatherAPIYokohama" target */ = {
+		ECCF481D2D11D53200535349 /* Exceptions for "WeatherAPIYokohama" folder in "WeatherAPIYokohama" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -47,7 +47,7 @@
 		EC824AA22D0F6C3E00F15893 /* WeatherAPIYokohama */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				EC824B4E2D11C91E00F15893 /* Exceptions for "WeatherAPIYokohama" folder in "WeatherAPIYokohama" target */,
+				ECCF481D2D11D53200535349 /* Exceptions for "WeatherAPIYokohama" folder in "WeatherAPIYokohama" target */,
 			);
 			path = WeatherAPIYokohama;
 			sourceTree = "<group>";
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC824B4C2D11411800F15893 /* Algorithms in Frameworks */,
+				ECCF481C2D11D30700535349 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 				EC824AA22D0F6C3E00F15893 /* WeatherAPIYokohama */,
 				EC824AB32D0F6C3F00F15893 /* WeatherAPIYokohamaTests */,
 				EC824ABD2D0F6C3F00F15893 /* WeatherAPIYokohamaUITests */,
-				EC824B482D11408200F15893 /* Frameworks */,
+				ECCF481A2D11D30700535349 /* Frameworks */,
 				EC824AA12D0F6C3E00F15893 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,7 +111,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC824B482D11408200F15893 /* Frameworks */ = {
+		ECCF481A2D11D30700535349 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -138,7 +138,7 @@
 			);
 			name = WeatherAPIYokohama;
 			packageProductDependencies = (
-				EC824B4B2D11411800F15893 /* Algorithms */,
+				ECCF481B2D11D30700535349 /* Algorithms */,
 			);
 			productName = WeatherAPIYokohama;
 			productReference = EC824AA02D0F6C3E00F15893 /* WeatherAPIYokohama.app */;
@@ -223,7 +223,7 @@
 			mainGroup = EC824A972D0F6C3E00F15893;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				EC824B472D11403200F15893 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				ECCF48192D11D30000535349 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EC824AA12D0F6C3E00F15893 /* Products */;
@@ -592,7 +592,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EC824B472D11403200F15893 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+		ECCF48192D11D30000535349 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
 			requirement = {
@@ -603,9 +603,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EC824B4B2D11411800F15893 /* Algorithms */ = {
+		ECCF481B2D11D30700535349 /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC824B472D11403200F15893 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			package = ECCF48192D11D30000535349 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
