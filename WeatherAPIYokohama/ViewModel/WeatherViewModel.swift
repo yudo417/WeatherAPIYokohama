@@ -10,9 +10,17 @@ import Foundation
 class WeatherViewModel:ObservableObject {
     @Published var weather: WeatherData?
     @Published var errorMessage: String?
+
     func fetchWeather() {
+        guard let path = Bundle.main.path(forResource: "config", ofType: "plist"),
+         let plistData = NSDictionary(contentsOfFile: path),
+         let apiKey = plistData["apiKey"] as? String
+        else {
+            print("Failed to load API key from con.plist")
+            return
+        }
+        print("取得APIKey:\(apiKey)")
         let baseURL = "https://api.openweathermap.org/data/2.5/forecast"
-        let apiKey = "f3406913417c0da6f9176a4b89c1c2be"
         let city = "Kikuna"
 
         var components = URLComponents(string: baseURL)!

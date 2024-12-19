@@ -2,6 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>ApiKey</key>
+			<string>f3406913417c0da6f9176a4b89c1c2be</string>
+			<key>CFBundleTypeName</key>
+			<string>Config</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>plist</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleLocalizations</key>
 	<array>
 		<string>ja</string>
