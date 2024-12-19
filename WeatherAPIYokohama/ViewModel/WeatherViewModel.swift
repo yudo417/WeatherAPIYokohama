@@ -13,12 +13,13 @@ class WeatherViewModel:ObservableObject {
     func fetchWeather() {
         let baseURL = "https://api.openweathermap.org/data/2.5/forecast"
         let apiKey = "f3406913417c0da6f9176a4b89c1c2be"
-        let city = "Yokohama"
+        let city = "Kikuna"
 
         var components = URLComponents(string: baseURL)!
         components.queryItems = [
             URLQueryItem(name: "q", value: city),
-            URLQueryItem(name: "appid", value: apiKey)
+            URLQueryItem(name: "appid", value: apiKey),
+            URLQueryItem(name: "units", value: "metric")
         ]
 
         guard let url = components.url else {

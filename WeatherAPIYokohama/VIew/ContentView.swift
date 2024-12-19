@@ -47,12 +47,13 @@ struct ContentView: View {
 
 extension ContentView{
     func CaltempC(_ temp:Double) -> String{
-        String(format:"%.1f",temp - 273.15)
+        String(format:"%.1f",temp)
     }
 
     func CalTime(_ time:String) -> String{
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        df.locale = Locale(identifier: "ja_JP")
         let dataString = df.date(from: time)!
         df.dateFormat = "HH : mm"
         return df.string(from: dataString)
@@ -62,7 +63,9 @@ extension ContentView{
         let isFirst = isFirst
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        df.locale = Locale(identifier: "ja_JP")
         let dataString = df.date(from: time)!
+//        let _ = print("a:\(dataString)")
         df.dateFormat = "HH"
         let dftime = df.string(from: dataString)
         df.dateFormat = "MM/dd(EEEEE)"
@@ -73,6 +76,7 @@ extension ContentView{
     func isAfter (_ time : String) -> Bool{
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        df.locale = Locale(identifier: "ja_JP")
         let dataString = df.date(from: time)!
         return (Date() < dataString) ? true : false
     }
